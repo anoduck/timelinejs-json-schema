@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.date.schema.json",
+  "title": "Date",
+  "description": "A Date object for timelinejs",
+	"type": "object",
+	"properties": {
+		"year": {
+			"type": "number"
+		},
+		"month": {
+			"type": "number"
+		},
+		"day": {
+			"type": "number"
+		},
+		"hour": {
+			"type": "number"
+		},
+		"minute": {
+			"type": "number"
+		},
+		"second": {
+			"type": "number"
+		},
+		"millisecond": {
+			"type": "number"
+		},
+		"display_date": {
+			"type": "string"
+		},
+		"format": {
+			"type": "string"
+		}
+	}
+}

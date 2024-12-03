@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.com/timelinejs.text.schema.json",
+  "$id": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.text.schema.json",
   "title": "Text",
   "description": "A text object for timelinejs",
 	"type": "object",

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://gist.github.com/anoduck/11a3429f7e47ab87719ad032ca3bc5c7",
+	"$id": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.schema.json",
 	"title": "TimelineJs",
 	"description": "Schema for TimelineJs JSON data.",
 	"type": "object",
@@ -20,18 +20,8 @@
 						}
 					}
 					"media": {
-						"type": "object",
-						"properties": {
-							"url": {
-								"type": "string"
-							},
-							"caption": {},
-							"credit": {},
-							"thumbnail": {},
-							"alt": {},
-							"title": {},
-							"link": {},
-							"link_target": {}
+						"description": "Media Object",
+						"$ref": "./timelinejs.media.schema.json"
 						}
 					}
 				}
