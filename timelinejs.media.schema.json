@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.com/timelinejs.media.schema.json",
+  "$id": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.media.schema.json",
   "title": "Media",
   "description": "A media object for timelinejs",
 	"type": "object",
