@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/timelinejs.date.schema.json",
+  "title": "Date",
+  "description": "A Date object for timelinejs",
+	"type": "object",
+	"properties": {
+	}
+}

@@ -1,0 +1,55 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://gist.github.com/anoduck/11a3429f7e47ab87719ad032ca3bc5c7",
+	"title": "TimelineJs",
+	"description": "Schema for TimelineJs JSON data.",
+	"type": "object",
+	"properties": {
+		"title": {
+			"description": "A solitary 'slide' object without a date",
+			"type": "object",
+			"properties": {
+				"text": {
+					"type": "object",
+					"properties": {
+						"headline": {
+							"type": "string"
+						},
+						"text": {
+							"type": "string"
+						}
+					}
+					"media": {
+						"type": "object",
+						"properties": {
+							"url": {
+								"type": "string"
+							},
+							"caption": {},
+							"credit": {},
+							"thumbnail": {},
+							"alt": {},
+							"title": {},
+							"link": {},
+							"link_target": {}
+						}
+					}
+				}
+			}
+		},
+		"events": {
+			"description": "List of 'slide' objects",
+			"type": "array",
+			
+		},
+		"eras": {
+			"description": "List of 'era' objects",
+			"type": "list"
+		},
+		"scale": {
+			"description": "Either human or cosmological. Determines scale of the timeline.",
+			"type": "string"
+		},
+		"required": [ "events" ]
+	},
+}

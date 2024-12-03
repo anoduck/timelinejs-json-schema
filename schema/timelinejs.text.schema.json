@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/timelinejs.text.schema.json",
+  "title": "Text",
+  "description": "A text object for timelinejs",
+	"type": "object",
+	"properties": {
+		"isEra": {
+			"type": "boolean"
+		},
+		"required": [
+			"isEra"
+		],
+		"if": {
+			"properties": {
+				"isEra": {
+					"const": true
+				}
+			}
+		},
+		"then": {
+			"properties": {
+				"headline": {
+					"type": "string"
+				}
+			}
+		},
+		"else": {
+			"properties": {
+				"headline": {
+					"type": "string"
+				},
+				"text": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
