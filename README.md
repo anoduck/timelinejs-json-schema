@@ -1,19 +1,35 @@
 
 # TimelineJs Json Schema
 
-A JSON Schema for validating timelinejs JSON files and for use with autocompletion systems. 
+A JSON Schema for validating timelinejs JSON files and for use with autocompletion systems. The
+[timelinejs](https://timeline.knightlab.com) script enables website designers the ability to create
+timeline elements that are truly dynamic and provide deep introspection. Currently, the developers
+provide two means for creating a timelinejs with data, a google spreadsheet and a json file. Of the
+two, the google spreadsheet is by far the easiest to work with and less prone to cause errors. This
+schema is for use with the latter option of creating timelinejs elements with a local json file.
 
-By comparision, the structure of the TimelineJs schema is rather complex, and quite a burden to define. So for this reason, the schema has been broken down into several different files, rather than one solitary file. 
+The project is experiemental at best, and a few features have not been included yet in this
+implementation. 
 
 ## Getting Started
 
-Using the schema SHOULD be as simple as including the link to the raw file in your own timelinejs json file.
+Using the schema should be as simple as including the link to the schema at the top of your
+timelinejs json file and go.
+
+``` json
+{
+	"$schema": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.schema.json",
+}
+```
 
 ### Prerequisites
 
-Requirements for the software and other tools to build, test and push 
+Requirements for the software and other tools to build, test and push: 
 - More sleep than I got last night.
 - More time than I have creating it.
+
+Most modern code editors will use a schema definition to assist in providing completion of
+verification of the json file.
 
 ### Installing
 

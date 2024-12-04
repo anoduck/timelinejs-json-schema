@@ -6,22 +6,36 @@
 	"type": "object",
 	"properties": {
 		"events": {
-			"description": "List of 'slide' objects",
+			"description": "List of 'slide' objects.",
 			"type": "array",
 			"items": { "$ref": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.slide.schema.json" }
 		},
 		"title": {
+			"description": "Single instance of a 'slide' object.",
 			"type": "object",
 			"$ref": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.slide.schema.json"
 		},
 		"eras": {
-			"description": "List of 'era' objects",
+			"description": "List of 'era' objects.",
 			"type": "array",
 			"items": { "$ref": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.era.schema.json" }
 		},
 		"scale": {
 			"description": "Either human or cosmological. Determines scale of the timeline.",
-			"type": "string"
+			"oneOf": [
+				{
+					"properties": {
+						"human": { "type": "string" }
+					},
+					"required": [ "human" ]
+				},
+				{
+					"properties": {
+						"cosmological": { "type": "string" }
+					},
+					"required": [ "cosmological" ]
+				}
+			]
 		},
 		"required": [ "events" ]
 	},

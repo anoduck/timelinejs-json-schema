@@ -3,6 +3,7 @@
 	"$id": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.slide.schema.json",
 	"title": "Slide",
 	"description": "Slide object schema for timelinejs",
+	"$comment": "Titles do not require a start_date, where events do. This has yet to be implemented.",
 	"type": "object",
 	"properties": {
 		"start_date": {
