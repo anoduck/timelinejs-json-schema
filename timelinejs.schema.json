@@ -5,36 +5,19 @@
 	"description": "Schema for TimelineJs JSON data.",
 	"type": "object",
 	"properties": {
-		"title": {
-			"description": "A solitary 'slide' object without a date",
-			"type": "object",
-			"properties": {
-				"text": {
-					"type": "object",
-					"properties": {
-						"headline": {
-							"type": "string"
-						},
-						"text": {
-							"type": "string"
-						}
-					}
-					"media": {
-						"description": "Media Object",
-						"$ref": "./timelinejs.media.schema.json"
-						}
-					}
-				}
-			}
-		},
 		"events": {
 			"description": "List of 'slide' objects",
 			"type": "array",
-			
+			"items": { "$ref": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.slide.schema.json" }
+		},
+		"title": {
+			"type": "object",
+			"$ref": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.slide.schema.json"
 		},
 		"eras": {
 			"description": "List of 'era' objects",
-			"type": "list"
+			"type": "array",
+			"items": { "$ref": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.era.schema.json" }
 		},
 		"scale": {
 			"description": "Either human or cosmological. Determines scale of the timeline.",

@@ -1,0 +1,25 @@
+{
+"$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.era.schema.json",
+  "title": "Era",
+  "description": "An era object for timelinejs",
+	"type": "object",
+	"properties": {
+		"start_date": {
+			"description": "Date Object",
+			"type": "object",
+			"$ref": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.date.schema.json"
+		},
+		"end_date": {
+			"description": "Date Object",
+			"type": "object",
+			"$ref": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.date.schema.json"
+		},
+		"text": {
+			"description": "Text Object",
+			"type": "object",
+			"$ref": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.text.schema.json"
+		}
+	}
+	"required": [ "start_date", "end_date" ]
+}

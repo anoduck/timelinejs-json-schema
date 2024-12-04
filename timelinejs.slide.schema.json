@@ -1,0 +1,41 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.slide.schema.json",
+	"title": "Slide",
+	"description": "Slide object schema for timelinejs",
+	"type": "object",
+	"properties": {
+		"start_date": {
+			"type": "object",
+			"$ref": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.date.schema.json"
+		},
+		"end_date": {
+			"type": "object",
+			"$ref": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.date.schema.json"
+		},
+		"text": {
+			"type": "object",
+			"$ref": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.text.schema.json"
+		},
+		"media": {
+			"type": "object",
+			"$ref": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.media.schema.json"
+		},
+		"group": {
+			"type": "string"
+		},
+		"display_date": {
+			"type": "string"
+		},
+		"background": {
+			"type": "object"
+		},
+		"autolink": {
+			"type": "boolean"
+		},
+		"unique_id": {
+			"type": "string"
+		}
+	}
+	"required": [ "start_date" ]
+}

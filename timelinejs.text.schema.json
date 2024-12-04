@@ -5,15 +5,15 @@
   "description": "A text object for timelinejs",
 	"type": "object",
 	"properties": {
-		"isEra": {
+		"isType": {
 			"type": "boolean"
 		},
 		"required": [
-			"isEra"
+			"isType"
 		],
 		"if": {
 			"properties": {
-				"isEra": {
+				"isType": {
 					"const": true
 				}
 			}
