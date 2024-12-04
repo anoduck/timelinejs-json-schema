@@ -28,82 +28,39 @@ Requirements for the software and other tools to build, test and push:
 - More sleep than I got last night.
 - More time than I have creating it.
 
-Most modern code editors will use a schema definition to assist in providing completion of
+Most modern code editors will use a schema definition to assisst in providing completion of
 verification of the json file.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development
-environment running
+Simply place the following line at the top of your json file. Append with a `,` and you should be
+good to go. 
 
-Say what the step will be
-
-    Give the example
-
-And repeat
-
-    until finished
-
-End with an example of getting some data out of the system or using it
-for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Sample Tests
-
-Explain what these tests test and why
-
-    Give an example
-
-### Style test
-
-Checks if the best practices and the right coding style has been used.
-
-    Give an example
-
-## Deployment
-
-Add additional notes to deploy this on a live system
+``` json
+"$schema": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.schema.json"
+```
 
 ## Built With
 
-Mention the tools you used to build this project
+- [JSON Schema](https://json-schema.org/learn/)
+- [JSON Schema Docs](https://www.learnjsonschema.com/2020-12/)
 
-- [Contributor Covenant](https://www.contributor-covenant.org/)
-- [Creative Commons](https://creativecommons.org/)
-
-
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code
-of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
 We use [Semantic Versioning](http://semver.org/) for versioning. For the versions
-available, see the [tags on this
-repository](https://github.com/PurpleBooth/a-good-readme-template/tags).
+available, see the [tags on this repository](https://github.com/anoduck/timelinejs-json-schema/tags).
 
 ## Authors
 
-See also the list of
-[contributors](https://github.com/PurpleBooth/a-good-readme-template/contributors)
-who participated in this project.
-
-- **Billie Thompson** - _Provided README Template_ - [PurpleBooth](https://github.com/PurpleBooth)
-- **Shaan Khan** - _Provided Created README Generator_ - [Shaan Khan](https://github.com/ShaanCoding)
-
+- **Anoduck, The Anonymous Duck** - _Provided README Template_ - [Anoduck](https://github.com/anoduck)
 
 ## License
 
-This project is licensed under the [CC0 1.0 Universal](LICENSE.md)
-Creative Commons License - see the [LICENSE.md](LICENSE.md) file for
-details
+This project is licensed under the [MIT License](https://anoduck.mit-license.org)
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code is used
-- Inspiration
-- etc
+- Big thanks goes to [Elio Struyf](https://github.com/estruyf) who created the vscode package
+  [FrontMatter](https://github.com/estruyf/vscode-front-matter/) and by doing so taught individuals
+  like yours truly the beauty of JSON Schema.
