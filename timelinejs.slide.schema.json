@@ -37,6 +37,6 @@
 		"unique_id": {
 			"type": "string"
 		}
-	}
+	},
 	"required": [ "start_date" ]
 }

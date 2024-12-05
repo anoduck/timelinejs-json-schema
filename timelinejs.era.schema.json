@@ -20,6 +20,6 @@
 			"type": "object",
 			"$ref": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.text.schema.json"
 		}
-	}
+	},
 	"required": [ "start_date", "end_date" ]
 }
