@@ -23,7 +23,8 @@
 				"headline": {
 					"type": "string"
 				}
-			}
+			},
+			"required": [ "headline" ]
 		},
 		"else": {
 			"properties": {
@@ -33,7 +34,8 @@
 				"text": {
 					"type": "string"
 				}
-			}
+			},
+			"required": [ "headline", "text" ]
 		}
 	}
 }
