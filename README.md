@@ -40,6 +40,11 @@ good to go.
 "$schema": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.schema.json"
 ```
 
+## Schema Versions
+
+Currently using: http://json-schema.org/draft-07/schema
+Previously was using: https://json-schema.org/draft/2020-12/schema
+
 ## Built With
 
 - [JSON Schema](https://json-schema.org/learn/)

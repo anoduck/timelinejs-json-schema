@@ -1,8 +1,9 @@
 {
-	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$schema": "http://json-schema.org/draft-07/schema",
 	"$id": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.schema.json",
 	"title": "TimelineJs",
-	"description": "Schema for TimelineJs JSON data.",
+	"description": "Schema for KnightLab's TimelineJs JSON data file.",
+	"lastModified": "2025-01-03T18:06:10-05:00",
 	"type": "object",
 	"properties": {
 		"events": {
@@ -36,7 +37,7 @@
 					"required": [ "cosmological" ]
 				}
 			]
-		},
-		"required": [ "events" ]
-	}
+		}
+	},
+	"required": [ "events" ]
 }

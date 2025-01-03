@@ -1,41 +1,15 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://anoduck.github.io/timelinejs-json-schema/timelinejs.text.schema.json",
   "title": "Text",
   "description": "A text object for timelinejs",
 	"type": "object",
 	"properties": {
-		"isType": {
-			"type": "boolean"
+		"headline": {
+			"type": "string"
 		},
-		"required": [
-			"isType"
-		],
-		"if": {
-			"properties": {
-				"isType": {
-					"const": true
-				}
-			}
-		},
-		"then": {
-			"properties": {
-				"headline": {
-					"type": "string"
-				}
-			},
-			"required": [ "headline" ]
-		},
-		"else": {
-			"properties": {
-				"headline": {
-					"type": "string"
-				},
-				"text": {
-					"type": "string"
-				}
-			},
-			"required": [ "headline", "text" ]
+		"text": {
+			"type": "string"
 		}
 	}
 }
